@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx1
+spec:
+  nodeName: demo # schedule pod to specific node
+  containers:
+  - name: nginx1
+    image: nginx
+    imagePullPolicy: IfNotPresent
